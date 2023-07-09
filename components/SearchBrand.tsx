@@ -22,7 +22,7 @@ const SearchBrand = ({brand, setBrand}: SearchBrandProps) => {
           <Image 
           src="/icons/car.svg"
           width={20}
-          height={20}
+          height={18}
           className="ml-4 absolute mt-[14px]"
           alt="Marca do carro" /> 
 

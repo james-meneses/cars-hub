@@ -9,6 +9,8 @@ import SearchBar from './SearchBar'
 import SearchBrand from './SearchBrand'
 import CustomFilter from './CustomFilter'
 
+import CarCard from './CarCard'
+
 export {
   Hero, 
   CustomButton,
@@ -17,5 +19,6 @@ export {
   SearchBar,
   SearchBrand,
   CustomFilter,
+  CarCard,
   Footer
 }
