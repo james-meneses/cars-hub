@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Link href="/" className="flex justify-center items-center">
           <Image src="/car-logo.svg"
-          alt="Logo - flynet transfers"
+          alt="Logo - Car Hub"
           className="object-contain"
           width={50} height={50} />  
         </Link>

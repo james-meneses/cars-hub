@@ -40,14 +40,15 @@ const SearchBrand = ({brand, setBrand}: SearchBrandProps) => {
           afterLeave={() => setQuery('')}
           >
             <Combobox.Options className="search-brand__options">
-             { filteredBrands?.length === 0 && query !== '' ? (
-              <Combobox.Option value={''} className="search-brand__option">
-                Sem resultados para: <b>{query}</b>
-              </Combobox.Option>
-             ) : filteredBrands?.map(brand => (
+             { filteredBrands?.map(brand => (
               <Combobox.Option key={brand} value={brand} className={({active}) => `relative search-brand__option ${active ? 'bg-sky-700 text-white' : 'text-gray-900'}`}
               >
-                {brand}
+                {({ selected, active }) => (
+                  <>
+                  <span className={`block truncate ${selected ? 'font-medium' : 'font-normal' }`}>{brand}</span>
+                  {selected ? (<span className={`absolute inset-y-0 left-0 flex items-center pl-3 ${active ? 'text-white' : 'text-teal-600'}`}></span>) : null}
+                  </>
+                )}
               </Combobox.Option>
              )) }
             </Combobox.Options>
