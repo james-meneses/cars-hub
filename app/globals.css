@@ -112,7 +112,7 @@
   @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
 }
 
-.car-card__price-dollar {
+.car-card__price-currency {
   @apply self-start text-[14px] leading-[17px] font-semibold;
 }
 

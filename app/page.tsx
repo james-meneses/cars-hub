@@ -27,14 +27,12 @@ export default async function Home() {
           {
             isDataEmpty ? (<div className="home__error-container">
               <h2 className="text-black text-xl font-bold">Sem resultados.</h2>
-              </div>) : (<section className="home__cars-wrapper">
-              {allCars.map((car, index) => <CarCard key={index} 
-              type={car.type}
-              year={car.year}
-              make={car.make}
-              model={car.model}
-              fuel_type={car.fuel_type}
-              />)}
+              </div>) : (<section className='w-full'>
+                <ul className="home__cars-wrapper">
+              {allCars.map((car, index) => <CarCard 
+              key={index} 
+              car={car}
+              />)}</ul>
               </section>)
           }
 
