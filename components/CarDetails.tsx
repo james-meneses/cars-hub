@@ -9,7 +9,7 @@ interface CarDetailsProps {
   car: CarProps,
   isOpen: boolean,
   closeModal: () => void,
-  setIsOpen: (value: boolean) => void
+  setIsOpen?: (value: boolean) => void
 }
 
 const CarDetails = ({car, closeModal, isOpen}: CarDetailsProps) => {

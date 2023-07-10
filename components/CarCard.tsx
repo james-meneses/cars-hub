@@ -24,6 +24,10 @@ const CarCard = ({key, car} : CarCardProps) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const closeModal = () => {
+    setIsOpen(false)
+  }
+
   return (
     <li className="car-card group" 
         onClick={() => setIsOpen(true)} key={key}>
@@ -75,7 +79,7 @@ const CarCard = ({key, car} : CarCardProps) => {
 
       <CarDetails 
         isOpen={isOpen}
-        closeModal={() => setIsOpen(false)}
+        closeModal={closeModal}
         car={car} />
     </li>
   )
