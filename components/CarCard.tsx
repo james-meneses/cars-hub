@@ -25,7 +25,8 @@ const CarCard = ({key, car} : CarCardProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <li className="car-card group" key={key}>
+    <li className="car-card group" 
+        onClick={() => setIsOpen(true)} key={key}>
       <div className="car-card__content">
         <h2 className="car-card__content-title">{make} {model}</h2>
       </div>

@@ -17,6 +17,7 @@ const Hero = () => {
         <div className="hero__image-container">
         <Image src="/hero.png" 
             fill 
+            priority
             quality={90}
             alt="Capa - Cars Hub"
             className="hero__image object-contain"
